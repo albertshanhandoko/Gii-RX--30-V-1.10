@@ -800,6 +800,9 @@ namespace ControllerPage
                 Sensor_input_Helper.Update_DataConfig(Sensor_input_Helper.GetLocalIPAddress(), "brown_rice", textBox_bias_Brownrice.Text);
                 Sensor_input_Helper.Update_DataConfig(Sensor_input_Helper.GetLocalIPAddress(), "wheat", textBox_bias_wheat.Text);
                 Sensor_input_Helper.Update_DataConfig(Sensor_input_Helper.GetLocalIPAddress(), "corn", textBox_bias_corn.Text);
+                //Sensor_input_Helper.Update_DataConfig(Sensor_input_Helper.GetLocalIPAddress(), "corn_high", textBox_bias_Brownrice.Text);
+                //Sensor_input_Helper.Update_DataConfig(Sensor_input_Helper.GetLocalIPAddress(), "corn_medium", textBox_bias_wheat.Text);
+                //Sensor_input_Helper.Update_DataConfig(Sensor_input_Helper.GetLocalIPAddress(), "corn_low", textBox_bias_corn.Text);
                 Sensor_input_Helper.Update_DataConfig(Sensor_input_Helper.GetLocalIPAddress(), "soy", textBox_bias_soy.Text);
                 Sensor_input_Helper.Update_DataConfig(Sensor_input_Helper.GetLocalIPAddress(), "barley", textBox_bias_barley.Text);
                 Sensor_input_Helper.Update_DataConfig(Sensor_input_Helper.GetLocalIPAddress(), "polished_rice", textBox_bias_Polished_Rice.Text);

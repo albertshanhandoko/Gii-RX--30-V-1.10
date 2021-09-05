@@ -372,7 +372,7 @@ namespace ControllerPage
             this.tableLayoutPanel1.SetRowSpan(this.ButtonProduct, 2);
             this.ButtonProduct.Size = new System.Drawing.Size(124, 66);
             this.ButtonProduct.TabIndex = 1;
-            this.ButtonProduct.Text = "Corn";
+            this.ButtonProduct.Text = "Paddy";
             this.ButtonProduct.UseVisualStyleBackColor = false;
             this.ButtonProduct.Click += new System.EventHandler(this.button_Product_Click);
             // 

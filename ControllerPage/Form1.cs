@@ -409,8 +409,26 @@ namespace ControllerPage
             {
 
                 Temp_TextBox.Text = "";
-
-                string product_text = ButtonProduct.Text.Replace(" ", "_");
+                ///*
+                string product_text;
+                if (ButtonProduct.Text=="Corn High")
+                {
+                    product_text = "Brown_Rice";
+                }
+                else if (ButtonProduct.Text == "Corn Medium")
+                {
+                    product_text = "Wheat";
+                }
+                else if (ButtonProduct.Text == "Corn Low")
+                {
+                    product_text = "Corn";
+                }
+                else
+                {
+                    product_text = ButtonProduct.Text.Replace(" ", "_");
+                }
+                //*/
+                //string product_text= ButtonProduct.Text.Replace(" ", "_");
                 List<SQL_Data_Config> current_config = Sensor_input_Helper.MySql_Get_DataConfig(Sensor_input_Helper.GetLocalIPAddress());
                 var Product_var = current_config.Where(config => config.Config_Param == product_text.ToLower());
                 double Product_value = (Product_var.Select(p => p.Config_Value).ToArray()).First();
@@ -776,8 +794,28 @@ namespace ControllerPage
                     //ResultGrain = "10192\r";// testing only
 
                     // Product
-                    string combox_typemeasure = ButtonProduct.Text;
-                    combox_typemeasure = combox_typemeasure.Replace(" ", "_");
+                    ///*
+                    string combox_typemeasure;
+                    if (ButtonProduct.Text == "Corn High")
+                    {
+                        combox_typemeasure = "Brown_Rice";
+                    }
+                    else if (ButtonProduct.Text == "Corn Medium")
+                    {
+                        combox_typemeasure = "Wheat";
+                    }
+                    else if (ButtonProduct.Text == "Corn Low")
+                    {
+                        combox_typemeasure = "Corn";
+                    }
+                    else
+                    {
+                        combox_typemeasure = ButtonProduct.Text.Replace(" ", "_");
+                    }
+                    //*/
+
+                    //string combox_typemeasure = ButtonProduct.Text;
+                    //combox_typemeasure = combox_typemeasure.Replace(" ", "_");
                     TypeOfMeasure enum_typemeasure = (TypeOfMeasure)Enum.Parse(typeof(TypeOfMeasure), combox_typemeasure);
                     ResultMeasure = Sensor_input_Helper.GetDescription(enum_typemeasure);
 
@@ -820,8 +858,29 @@ namespace ControllerPage
                     ResultGrain = Sensor_input_Helper.GetDescription(enum_numgrain);
 
                     // Product
-                    string combox_typemeasure = ButtonProduct.Text;
-                    combox_typemeasure = combox_typemeasure.Replace(" ", "_");
+
+                    ///*
+                    string combox_typemeasure;
+                if (ButtonProduct.Text == "Corn High")
+                    {
+                        combox_typemeasure = "Brown_Rice";
+                    }
+                    else if (ButtonProduct.Text == "Corn Medium")
+                    {
+                        combox_typemeasure = "Wheat";
+                    }
+                    else if (ButtonProduct.Text == "Corn Low")
+                    {
+                        combox_typemeasure = "Corn";
+                    }
+                    else
+                    {
+                        combox_typemeasure = ButtonProduct.Text.Replace(" ", "_");
+                    }
+                    //*/
+
+                    //string combox_typemeasure = ButtonProduct.Text;
+                    //combox_typemeasure = combox_typemeasure.Replace(" ", "_");
                     TypeOfMeasure enum_typemeasure = (TypeOfMeasure)Enum.Parse(typeof(TypeOfMeasure), combox_typemeasure);
                     ResultMeasure = Sensor_input_Helper.GetDescription(enum_typemeasure);
 
@@ -855,8 +914,28 @@ namespace ControllerPage
                     ResultGrain = Sensor_input_Helper.GetDescription(enum_numgrain);
 
                     // Product
-                    string combox_typemeasure = ButtonProduct.Text;
-                    combox_typemeasure = combox_typemeasure.Replace(" ", "_");
+                    ///*
+                    string combox_typemeasure;
+                    if (ButtonProduct.Text == "Corn High")
+                    {
+                        combox_typemeasure = "Brown_Rice";
+                    }
+                    else if (ButtonProduct.Text == "Corn Medium")
+                    {
+                        combox_typemeasure = "Wheat";
+                    }
+                    else if (ButtonProduct.Text == "Corn Low")
+                    {
+                        combox_typemeasure = "Corn";
+                    }
+                    else
+                    {
+                        combox_typemeasure = ButtonProduct.Text.Replace(" ", "_");
+                    }
+                    //*/
+
+                    //string combox_typemeasure = ButtonProduct.Text;
+                    //combox_typemeasure = combox_typemeasure.Replace(" ", "_");
                     TypeOfMeasure enum_typemeasure = (TypeOfMeasure)Enum.Parse(typeof(TypeOfMeasure), combox_typemeasure);
                     ResultMeasure = Sensor_input_Helper.GetDescription(enum_typemeasure);
 
