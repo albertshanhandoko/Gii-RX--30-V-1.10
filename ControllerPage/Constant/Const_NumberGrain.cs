@@ -423,16 +423,16 @@ namespace ControllerPage.Constant
     {
         [Description("42096\r")]
         Paddy,
-        [Description("22094\r")]
-        Brown_Rice,
-        [Description("52097\r")]
-        Wheat,
+        [Description("A20A3\r")]
+        Corn_High,
+        [Description("A20A3\r")]
+        Corn_Medium,
         [Description("62098\r")]
         Barley,
         [Description("8209A\r")]
         Soy,
         [Description("A20A3\r")]
-        Corn,
+        Corn_Low,
         [Description("32095\r")]
         Polished_Rice
     }
