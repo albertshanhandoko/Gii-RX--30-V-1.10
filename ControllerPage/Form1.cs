@@ -511,6 +511,7 @@ namespace ControllerPage
                 Button_Mode.Enabled = false;
                 
                 textBox_Sensor_Status.Text = "Running";
+                textBox_Sensor_Status.ForeColor = Color.Green;
                 // check during start
                 mySerialPort.ReadTimeout = 60 * 1000 * 5;// in miliseconds
 
@@ -1104,7 +1105,7 @@ namespace ControllerPage
                 {
                     //Curr_Kernel_TextBox.Text = (counter_data + 1).ToString();
                     textBox_Sensor_Status.Text = "Online";
-
+                    textBox_Sensor_Status.ForeColor = Color.Green;
                 });
                 Sensor_input_Helper.Update_FinishBatch(Sensor_input_Helper.GetLocalIPAddress(), batch_id);
 
