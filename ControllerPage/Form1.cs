@@ -749,9 +749,10 @@ namespace ControllerPage
 
             //online and no online
             textBox_Sensor_Status.Text = "Offline";
+            textBox_Sensor_Status.ForeColor = Color.Red;
 
             // TImer
-            
+
 
             Timer_5min_StopCheck.Elapsed += new ElapsedEventHandler(MyTimer_CheckStop_Tick);
             Timer_5min_StopCheck.Interval = (60000); // testing
