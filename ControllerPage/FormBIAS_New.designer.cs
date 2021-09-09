@@ -391,11 +391,11 @@ namespace ControllerPage
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(386, 117);
+            this.label7.Location = new System.Drawing.Point(353, 117);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(43, 20);
+            this.label7.Size = new System.Drawing.Size(76, 20);
             this.label7.TabIndex = 18;
-            this.label7.Text = "Corn";
+            this.label7.Text = "Corn Low";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label8
@@ -404,11 +404,11 @@ namespace ControllerPage
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(342, 159);
+            this.label8.Location = new System.Drawing.Point(311, 159);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(87, 54);
+            this.label8.Size = new System.Drawing.Size(118, 54);
             this.label8.TabIndex = 19;
-            this.label8.Text = "Corn Low";
+            this.label8.Text = "Polished Rice";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
@@ -468,6 +468,7 @@ namespace ControllerPage
             this.textBox_bias_Polished_Rice.Name = "textBox_bias_Polished_Rice";
             this.textBox_bias_Polished_Rice.Size = new System.Drawing.Size(53, 38);
             this.textBox_bias_Polished_Rice.TabIndex = 41;
+            this.textBox_bias_Polished_Rice.TextChanged += new System.EventHandler(this.textBox_bias_Polished_Rice_TextChanged);
             // 
             // button_plus_bias_polished
             // 
@@ -503,6 +504,7 @@ namespace ControllerPage
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "FormBIAS_New";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = " ";
             this.Load += new System.EventHandler(this.FormBIAS_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();

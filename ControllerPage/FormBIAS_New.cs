@@ -823,5 +823,10 @@ namespace ControllerPage
         {
 
         }
+
+        private void textBox_bias_Polished_Rice_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

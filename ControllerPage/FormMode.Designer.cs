@@ -111,6 +111,7 @@ namespace ControllerPage
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "FormMode";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = " ";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
