@@ -24,11 +24,13 @@ namespace ControllerPage
 
         private void button2_Click(object sender, EventArgs e)
         {
+            Global.GlobalVar = "Bahasa";
             this.Close();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
+            Global.GlobalVar = "English";
             this.Close();
         }
     }

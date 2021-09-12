@@ -326,9 +326,9 @@ namespace ControllerPage
             this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tableLayoutPanel1.SetColumnSpan(this.textBox7, 2);
             this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(160, 322);
+            this.textBox7.Location = new System.Drawing.Point(140, 322);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(87, 16);
+            this.textBox7.Size = new System.Drawing.Size(128, 16);
             this.textBox7.TabIndex = 9;
             this.textBox7.Text = "No. of Intervals";
             this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -353,9 +353,9 @@ namespace ControllerPage
             this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tableLayoutPanel1.SetColumnSpan(this.textBox9, 2);
             this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(414, 322);
+            this.textBox9.Location = new System.Drawing.Point(411, 322);
             this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(124, 16);
+            this.textBox9.Size = new System.Drawing.Size(130, 16);
             this.textBox9.TabIndex = 11;
             this.textBox9.Text = "Int. Waiting Time";
             this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -604,6 +604,7 @@ namespace ControllerPage
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gii RX-30 Automatic In-line Interval Moisture Measurement System  (Ver 1.10)";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);

@@ -19,7 +19,7 @@ namespace ControllerPage
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            //this.Hide();
             using (var form = new FormLanguage())
             {
                 var result = form.ShowDialog();
@@ -39,7 +39,7 @@ namespace ControllerPage
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            //this.Hide();
             using (var form = new FormThreshold())
             {
                 var result = form.ShowDialog();
@@ -56,7 +56,7 @@ namespace ControllerPage
 
         private void button3_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            //this.Hide();
             //using (var form = new FormBIASPassword())
             using (var form = new FormNumpadBPassword())
             {
@@ -73,7 +73,32 @@ namespace ControllerPage
 
         private void button4_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
+            Form1 Form1_open = new Form1();
+
+            Form1_open.ShowDialog();
+        }
+
+        private void FormOptions_Load(object sender, EventArgs e)
+        {
+            if(Global.GlobalVar=="Bahasa")
+            {
+                label1.Text = "Bahasa";
+                label2.Text = "Ambang Batas";
+                button1.Text = "Bahasa";
+                button2.Text = "Perbaharui";
+                button3.Text = "Perbaharui";
+                button4.Text = "Tutup";
+            }
+            if (Global.GlobalVar == "English")
+            {
+                label1.Text = "Language";
+                label2.Text = "Threshold";
+                button1.Text = "English";
+                button2.Text = "Update";
+                button3.Text = "Update";
+                button4.Text = "Close";
+            }
         }
     }
 }

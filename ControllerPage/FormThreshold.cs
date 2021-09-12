@@ -143,7 +143,26 @@ namespace ControllerPage
 
         private void FormThreshold_Load(object sender, EventArgs e)
         {
-
+            if (Global.GlobalVar == "Bahasa")
+            {
+                label1.Text = "Setting Ambang Batas";
+                radioButton_enable.Text = "Aktif";
+                radioButton_disable.Text = "NonAktif";
+                label2.Text = "Nilai Minimum";
+                label3.Text = "Nilai Maksimum";
+                button1.Text = "Simpan";
+                button_thereshold_apply.Text = "Tutup";
+            }
+            if (Global.GlobalVar == "English")
+            {
+                label1.Text = "Threshold Setting";
+                radioButton_enable.Text = "Enable";
+                radioButton_disable.Text = "Disable";
+                label2.Text = "Minimum Value";
+                label3.Text = "Maximum Value";
+                button1.Text = "Save";
+                button_thereshold_apply.Text = "Close";
+            }
         }
     }
 }

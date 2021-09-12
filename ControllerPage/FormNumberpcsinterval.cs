@@ -29,7 +29,18 @@ namespace ControllerPage
 
         private void Numberpcsinterval_Load(object sender, EventArgs e)
         {
-
+            if (Global.GlobalVar == "Bahasa")
+            {
+                label1.Text = "No. PCS dari Tiap Interval (1-250)";
+                Combobox_NumPerPCS.Text = "-- Mohon Pilih No PCS --";
+                button1.Text = "Gunakan";
+            }
+            if (Global.GlobalVar == "English")
+            {
+                label1.Text = "No. of PCS per Interval (1-250)";
+                Combobox_NumPerPCS.Text = "Combobox_NumPerPCS";
+                button1.Text = "Apply";
+            }
         }
 
         private void label1_Click(object sender, EventArgs e)

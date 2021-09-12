@@ -247,6 +247,7 @@
     <Compile Include="FormIntervalTime.Designer.cs">
       <DependentUpon>FormIntervalTime.cs</DependentUpon>
     </Compile>
+    <Compile Include="global.cs" />
     <Compile Include="Helper\SensorHelper.cs" />
     <Compile Include="Helper\SensorHelper_2.cs" />
     <Compile Include="Helper\Sensor_input_Helper.cs" />

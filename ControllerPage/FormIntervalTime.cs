@@ -53,5 +53,21 @@ namespace ControllerPage
         {
 
         }
+
+        private void FormIntervalTime_Load(object sender, EventArgs e)
+        {
+            if (Global.GlobalVar == "Bahasa")
+            {
+                label1.Text = "Waktu Tunggu Antar Invterval";
+                Combobox_timeinterval.Text = "-- Mohon Piluh Waktu Tunggu --";
+                button1.Text = "Gunakan";
+            }
+            if (Global.GlobalVar == "English")
+            {
+                label1.Text = "Waiting time between Intervals";
+                Combobox_timeinterval.Text = "-- Please Choose Waiting Time --";
+                button1.Text = "Apply";
+            }
+        }
     }
 }

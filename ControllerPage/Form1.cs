@@ -320,12 +320,14 @@ namespace ControllerPage
         }
         private void button_Option_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            //this.Hide();
+            
             //Form2_old F2 = new Form2_old();
             FormOptions FormOption_open = new FormOptions();
-
+            this.Hide();
             FormOption_open.ShowDialog();
-            this.Show();
+
+            //this.Show();
         }
         private void Btn_Stop_Click(object sender, EventArgs e)
         {
@@ -411,17 +413,29 @@ namespace ControllerPage
                 Temp_TextBox.Text = "";
                 ///*
                 string product_text;
-                if (ButtonProduct.Text=="Corn High")
+                if (ButtonProduct.Text== "Corn High"|| ButtonProduct.Text == "Jagung Tinggi")
                 {
                     product_text = "Brown_Rice";
                 }
-                else if (ButtonProduct.Text == "Corn Medium")
+                else if (ButtonProduct.Text == "Corn Medium"|| ButtonProduct.Text =="Jagung Medium")
                 {
                     product_text = "Wheat";
                 }
-                else if (ButtonProduct.Text == "Corn Low")
+                else if (ButtonProduct.Text == "Corn Low"|| ButtonProduct.Text =="Jagung Rendah")
                 {
                     product_text = "Corn";
+                }
+                else if (ButtonProduct.Text == "Padi")
+                {
+                    product_text = "Paddy";
+                }
+                else if (ButtonProduct.Text == "Kedelai")
+                {
+                    product_text = "Soy";
+                }
+                else if (ButtonProduct.Text == "Beras Poles")
+                {
+                    product_text = "Polished_Rice";
                 }
                 else
                 {
@@ -798,17 +812,29 @@ namespace ControllerPage
                     // Product
                     ///*
                     string combox_typemeasure;
-                    if (ButtonProduct.Text == "Corn High")
+                    if (ButtonProduct.Text == "Corn High" || ButtonProduct.Text == "Jagung Tinggi")
                     {
                         combox_typemeasure = "Brown_Rice";
                     }
-                    else if (ButtonProduct.Text == "Corn Medium")
+                    else if (ButtonProduct.Text == "Corn Medium" || ButtonProduct.Text == "Jagung Medium")
                     {
                         combox_typemeasure = "Wheat";
                     }
-                    else if (ButtonProduct.Text == "Corn Low")
+                    else if (ButtonProduct.Text == "Corn Low" || ButtonProduct.Text == "Jagung Rendah")
                     {
                         combox_typemeasure = "Corn";
+                    }
+                    else if (ButtonProduct.Text == "Padi")
+                    {
+                        combox_typemeasure = "Paddy";
+                    }
+                    else if (ButtonProduct.Text == "Kedelai")
+                    {
+                        combox_typemeasure = "Soy";
+                    }
+                    else if (ButtonProduct.Text == "Beras Poles")
+                    {
+                        combox_typemeasure = "Polished_Rice";
                     }
                     else
                     {
@@ -863,17 +889,29 @@ namespace ControllerPage
 
                     ///*
                     string combox_typemeasure;
-                if (ButtonProduct.Text == "Corn High")
+                    if (ButtonProduct.Text == "Corn High" || ButtonProduct.Text == "Jagung Tinggi")
                     {
                         combox_typemeasure = "Brown_Rice";
                     }
-                    else if (ButtonProduct.Text == "Corn Medium")
+                    else if (ButtonProduct.Text == "Corn Medium" || ButtonProduct.Text == "Jagung Medium")
                     {
                         combox_typemeasure = "Wheat";
                     }
-                    else if (ButtonProduct.Text == "Corn Low")
+                    else if (ButtonProduct.Text == "Corn Low" || ButtonProduct.Text == "Jagung Rendah")
                     {
                         combox_typemeasure = "Corn";
+                    }
+                    else if (ButtonProduct.Text == "Padi")
+                    {
+                        combox_typemeasure = "Paddy";
+                    }
+                    else if (ButtonProduct.Text == "Kedelai")
+                    {
+                        combox_typemeasure = "Soy";
+                    }
+                    else if (ButtonProduct.Text == "Beras Poles")
+                    {
+                        combox_typemeasure = "Polished_Rice";
                     }
                     else
                     {
@@ -918,17 +956,29 @@ namespace ControllerPage
                     // Product
                     ///*
                     string combox_typemeasure;
-                    if (ButtonProduct.Text == "Corn High")
+                    if (ButtonProduct.Text == "Corn High" || ButtonProduct.Text == "Jagung Tinggi")
                     {
                         combox_typemeasure = "Brown_Rice";
                     }
-                    else if (ButtonProduct.Text == "Corn Medium")
+                    else if (ButtonProduct.Text == "Corn Medium" || ButtonProduct.Text == "Jagung Medium")
                     {
                         combox_typemeasure = "Wheat";
                     }
-                    else if (ButtonProduct.Text == "Corn Low")
+                    else if (ButtonProduct.Text == "Corn Low" || ButtonProduct.Text == "Jagung Rendah")
                     {
                         combox_typemeasure = "Corn";
+                    }
+                    else if (ButtonProduct.Text == "Padi")
+                    {
+                        combox_typemeasure = "Paddy";
+                    }
+                    else if (ButtonProduct.Text == "Kedelai")
+                    {
+                        combox_typemeasure = "Soy";
+                    }
+                    else if (ButtonProduct.Text == "Beras Poles")
+                    {
+                        combox_typemeasure = "Polished_Rice";
                     }
                     else
                     {
@@ -2722,8 +2772,41 @@ namespace ControllerPage
             Console.WriteLine("Measurement Finish");
         }
 
+
         #endregion
 
-
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            if (Global.GlobalVar == "Bahasa")
+            {
+                label1.Text = "Pengukuran Kadar Air Aktual";
+                textBox10.Text = "Interval Ke";
+                textBox14.Text = "Penghitung Biji";
+                textBox15.Text = "Rataan Kadar Air";
+                textBox6.Text = "Produk";
+                textBox7.Text = "Jumlah Interval";
+                textBox8.Text = "PCS tiap Interval";
+                textBox9.Text = "Waktu Tunggu";
+                label4.Text = "Opsi";
+                Btn_Start.Text = "START";
+                Btn_Stop.Text = "STOP";
+                label_ipaddress.Text = "Nomor Sensor";
+            }
+            if (Global.GlobalVar == "English")
+            {
+                label1.Text = "Current Interval Moisture Measurement";
+                textBox10.Text = "Interval Number";
+                textBox14.Text = "Kernel Counter";
+                textBox15.Text = "Average Moisture";
+                textBox6.Text = "Product";
+                textBox7.Text = "No. of Intervals";
+                textBox8.Text = "PCS per Interval";
+                textBox9.Text = "Int. Waiting Time";
+                label4.Text = "Options";
+                Btn_Start.Text = "START";
+                Btn_Stop.Text = "STOP";
+                label_ipaddress.Text = "Sensor Number";
+            }
+        }
     }
 }

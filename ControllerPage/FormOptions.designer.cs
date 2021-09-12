@@ -110,7 +110,7 @@ namespace ControllerPage
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(256, 63);
             this.button1.TabIndex = 6;
-            this.button1.Text = "Bahasa";
+            this.button1.Text = "English";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -176,6 +176,7 @@ namespace ControllerPage
             this.Name = "FormOptions";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
+            this.Load += new System.EventHandler(this.FormOptions_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);

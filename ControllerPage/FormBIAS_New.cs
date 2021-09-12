@@ -76,7 +76,32 @@ namespace ControllerPage
 
         private void FormBIAS_Load(object sender, EventArgs e)
         {
-
+            if (Global.GlobalVar == "Bahasa")
+            {
+                label1.Text = "Setting BIAS";
+                label4.Text = "Padi";
+                label2.Text = "Jagung Tinggi";
+                label3.Text = "Jagung Medium";
+                label5.Text = "Barley";
+                label6.Text = "Kedelai";
+                label7.Text = "Jagung Rendah";
+                label8.Text = "Beras Poles";
+                button_bias_apply.Text = "Simpan";
+                BIAS_New_Close.Text = "Tutup";
+            }
+            if (Global.GlobalVar == "English")
+            {
+                label1.Text = "BIAS Setting";
+                label4.Text = "Paddy";
+                label2.Text = "Corn High";
+                label3.Text = "Corn Medium";
+                label5.Text = "Barley";
+                label6.Text = "Soy";
+                label7.Text = "Corn Low";
+                label8.Text = "Polished Rice";
+                button_bias_apply.Text = "Save";
+                BIAS_New_Close.Text = "Close";
+            }
         }
 
         #region Paddy

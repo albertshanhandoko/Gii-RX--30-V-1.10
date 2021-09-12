@@ -111,5 +111,20 @@ namespace ControllerPage
             throw new Exception("No network adapters with an IPv4 address in the system!");
         }
 
+        private void FormIPSet_Load(object sender, EventArgs e)
+        {
+            if (Global.GlobalVar == "Bahasa")
+            {
+                label1.Text = "Nomor Sensor";
+                Combobox_ipsetting.Text = "-- Mohon Pilih Nomor Sensor --";
+                button1.Text = "Gunakan";
+            }
+            if (Global.GlobalVar == "English")
+            {
+                label1.Text = "Sensor Number";
+                Combobox_ipsetting.Text = "-- Please Choose Sensor Number --";
+                button1.Text = "Apply";
+            }
+        }
     }
 }
