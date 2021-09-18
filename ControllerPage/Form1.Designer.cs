@@ -138,6 +138,7 @@ namespace ControllerPage
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(683, 425);
             this.tableLayoutPanel1.TabIndex = 0;
+            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // Button_Interface
             // 
@@ -513,6 +514,7 @@ namespace ControllerPage
             this.label_ipaddress.Name = "label_ipaddress";
             this.label_ipaddress.Size = new System.Drawing.Size(0, 16);
             this.label_ipaddress.TabIndex = 61;
+            this.label_ipaddress.Text = "Sensor Number";
             // 
             // label4
             // 

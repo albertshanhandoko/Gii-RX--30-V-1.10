@@ -586,13 +586,13 @@ namespace ControllerPage.Constant
 
         // Check Command
         [Description("Error 101 - Abnormal PU-359 circuits 1. Reset with Stop key")]
-        error00091,
+        error00191,
         [Description("Error 102 - Abnormal PU-359 circuits 2. Reset with Stop key")]
-        error00092,
+        error00292,
         [Description("Error 103 - Abnormal PU-359 circuits 3. Reset with Stop key")]
-        error00093,
+        error00393,
         [Description("Error 104 - Reset with Stop key")]
-        error00094,
+        error00494,
 
     };
 

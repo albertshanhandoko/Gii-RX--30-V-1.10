@@ -19,22 +19,9 @@ namespace ControllerPage
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //this.Hide();
-            using (var form = new FormLanguage())
-            {
-                var result = form.ShowDialog();
-                if (result == DialogResult.OK)
-                {
-                    //button_thereshold_maxvalue.Text = FormNumpad_max.numpad_max;
-                    Console.WriteLine("test");
-                }
-            }
-            this.Show();
-            //FormLanguage Form_language = new FormLanguage();
-            //Form_language.Show();
-            //Application.Run(Form_language);
-            //Form_language.ShowDialog();
-            //this.Close();
+            FormLanguage FormLanguageoption = new FormLanguage();
+            FormLanguageoption.ShowDialog();
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -73,10 +60,9 @@ namespace ControllerPage
 
         private void button4_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Form1 Form1_open = new Form1();
-
-            Form1_open.ShowDialog();
+            this.Close();
+            Form1 OpenForm1 = new Form1();
+            OpenForm1.ShowDialog();
         }
 
         private void FormOptions_Load(object sender, EventArgs e)

@@ -93,7 +93,16 @@ namespace ControllerPage
             InitializeComponent();
             MyTimer.Elapsed += new ElapsedEventHandler(MyTimer_Tick);
             MyTimer.Interval = (1000);
-
+            label1.Text = Global.GlobalVar1;
+            textBox10.Text = Global.GlobalVar2;
+            textBox14.Text = Global.GlobalVar3;
+            textBox15.Text = Global.GlobalVar4;
+            textBox6.Text = Global.GlobalVar5;
+            textBox7.Text = Global.GlobalVar6;
+            textBox8.Text = Global.GlobalVar7;
+            textBox9.Text = Global.GlobalVar8;
+            label4.Text = Global.GlobalVar9;
+            label_ipaddress.Text = Global.GlobalVar10;
             /*
             string result = "137";
             string checksum_result = "A0";
@@ -324,7 +333,7 @@ namespace ControllerPage
             
             //Form2_old F2 = new Form2_old();
             FormOptions FormOption_open = new FormOptions();
-            this.Hide();
+            //this.Hide();
             FormOption_open.ShowDialog();
 
             //this.Show();
@@ -776,7 +785,7 @@ namespace ControllerPage
             //textBox_sensornumber.Text = "SENSOR " + (Sensor_input_Helper.GetLocalIPAddress()).Last().ToString();
 
             //label_ipaddress.Text = "SENSOR " + (Sensor_input_Helper.GetLocalIPAddress()).Last().ToString();
-            label_ipaddress.Text = "Sensor Number";
+            //label_ipaddress.Text = "Sensor Number";
 
         }
 
@@ -2777,36 +2786,12 @@ namespace ControllerPage
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            if (Global.GlobalVar == "Bahasa")
-            {
-                label1.Text = "Pengukuran Kadar Air Aktual";
-                textBox10.Text = "Interval Ke";
-                textBox14.Text = "Penghitung Biji";
-                textBox15.Text = "Rataan Kadar Air";
-                textBox6.Text = "Produk";
-                textBox7.Text = "Jumlah Interval";
-                textBox8.Text = "PCS tiap Interval";
-                textBox9.Text = "Waktu Tunggu";
-                label4.Text = "Opsi";
-                Btn_Start.Text = "START";
-                Btn_Stop.Text = "STOP";
-                label_ipaddress.Text = "Nomor Sensor";
-            }
-            if (Global.GlobalVar == "English")
-            {
-                label1.Text = "Current Interval Moisture Measurement";
-                textBox10.Text = "Interval Number";
-                textBox14.Text = "Kernel Counter";
-                textBox15.Text = "Average Moisture";
-                textBox6.Text = "Product";
-                textBox7.Text = "No. of Intervals";
-                textBox8.Text = "PCS per Interval";
-                textBox9.Text = "Int. Waiting Time";
-                label4.Text = "Options";
-                Btn_Start.Text = "START";
-                Btn_Stop.Text = "STOP";
-                label_ipaddress.Text = "Sensor Number";
-            }
+
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
