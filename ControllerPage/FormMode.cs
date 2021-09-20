@@ -44,5 +44,21 @@ namespace ControllerPage
             this.Close();
         }
 
+        private void FormMode_Load(object sender, EventArgs e)
+        {
+            if (Global.GlobalVar == "Bahasa")
+            {
+                label1.Text = "Mode Pengukuran";
+                button1.Text = "PCS Tetap";
+                button3.Text = "Waktu Tetap";
+
+            }
+            if (Global.GlobalVar == "English")
+            {
+                label1.Text = "Measure Mode";
+                button1.Text = "Fixed PCS";
+                button3.Text = "Fixed Time";
+            }
+        }
     }
 }

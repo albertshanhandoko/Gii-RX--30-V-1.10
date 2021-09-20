@@ -19,6 +19,7 @@ namespace ControllerPage
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //this.Hide();
             FormLanguage FormLanguageoption = new FormLanguage();
             FormLanguageoption.ShowDialog();
 

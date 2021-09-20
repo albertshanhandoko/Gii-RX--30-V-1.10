@@ -329,7 +329,7 @@ namespace ControllerPage
         }
         private void button_Option_Click(object sender, EventArgs e)
         {
-            //this.Hide();
+            this.Hide();
             
             //Form2_old F2 = new Form2_old();
             FormOptions FormOption_open = new FormOptions();
